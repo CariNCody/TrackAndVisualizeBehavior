@@ -1,6 +1,6 @@
 #Cody Garcia's Fish Grid.
-#Intellectual property of Cody Garcia. Not to be distributed or sold.
-#released 16/11/2021
+#Written by Cody Garcia.
+#Released 16/11/2021
 from turtle import *
 from csv import writer
 import math
