@@ -30,6 +30,31 @@ The program creates (or appends to) either .csv or .txt files. Text files are pr
 There are no expected error messages to be seen when using the program.
 
 
+## PathVisualizer.py by Cody Garcia
+The Python script PathVisualizer.py allows the user to create a heat map style visualization of a path that a critter (test subject, ostrich, amoeba, ackie, whatever) went through. The script was created to use files created by FishyGrid.py, but can be used on other files which use the same syntax / formatting.
+
+### The customizable variables of PathVisualizer.py are:
+1) **rows** The number of rows the grid has. This can be changed to any natural number. The more rows the grid has, the taller it becomes, since every field of the grid remains a square, no matter the number of rows or columns (2.).
+2) **columns** The number of columns the grid has. This variable, just like rows (1.), can be changed to any natural number. The number of rows does not change the shape of the fields, since they always remain square. The size of the boxes is dependent on the number of columns in relation to the size (3.).
+3) **size** The length of the grid. The size reflects the length of the grid in its number of turtle grid pixels. Sizes over 1000 are usually preferable. The size of each box is the size divided by the number of columns.
+4) **Automatic** If the program should operate in "automatic" mode or not. This variable must be a Boolean, either True or False. If automatic mode is set to True, then the program will require the variable expression (5.).
+5) **expression** The regular expression the program shall search for when in automatic mode. If unfamiliar with the concept of a regular expression and just want to iterate through all the files in a folder, just use the expression "*".
+
+### Usage
+1) If automatic mode is set to False, the program will start with a prompt (in the shell) requesting a file name. Once the name has been entered, the program searches for the file and creates an EPS file of the finished heat map. The EPS file is automatically saved into the same folder as the original file.
+2) If automatic mode is set to True, the program will automatically iterate through all files that match the regular expression. For each file it will create an EPS file and save it to a folder in the same location the program is operating in.
+
+### Input files:
+The program was designed to be able to take files directly from the FishyGrid.py program. The files shall have 2 comma separated columns. The column on the left shall contain the X coordinates, while the column on the right shall contain the Y coordinates. The first line of the input file is ignored since the program expects there to be a header there. The file type can be either Text or CSV.
+
+### Output files:
+The program outputs EPS files of the heat maps. The EPS files have the same name as the input files with the ending .eps added on.
+
+### Error messages:
+There are no expected error messages to be seen when using the program.
+
+
+
 
 ## curiousfish.py by Carolin Sommer-Trembo
 The Python script curiousfish.py calculates various variables in the context of an individual exploring a novel environment. Input data are a two-column table which contains the 2D swimming path given by consecutive integer coordinates X and Y of the surface of the test tank.
