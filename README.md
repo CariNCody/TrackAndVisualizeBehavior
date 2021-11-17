@@ -51,7 +51,7 @@ The program was designed to be able to take files directly from the FishyGrid.py
 The program outputs EPS files of the heat maps. The EPS files have the same name as the input files with the ending .eps added on.
 
 ### Error messages:
-There are no expected error messages to be seen when using the program.
+If the program failes to create a folder, the folder could have been already been created, in which case the program would save the heat maps to the already existing folder for the heat maps. If there is no already existing folder for the heat maps, and the program failes to create the folder, the program does not have the proper permissions to function properly.
 
 
 
