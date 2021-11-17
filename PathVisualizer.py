@@ -17,7 +17,7 @@ size = 1175
 #Should the program run automatically, True or False.
 Automatic = False
 #If the program is set to automatic, enter the regular expression that matches your files.
-expression = "/Five_Minute/R_id*.txt"
+expression = "Five_Minute/R_id*.txt"
 #The only way to change the hight of the grid is by changing the number of rows.
 
 path = os.getcwd()
@@ -26,7 +26,7 @@ path = os.getcwd()
 if Automatic == False:
     file = input(str("Enter file name: "))
 if Automatic == True:
-    filename = glob.iglob(path+expression)
+    filename = glob.iglob(path+"/"+expression)
 
 
 #Sets up window size and name.
