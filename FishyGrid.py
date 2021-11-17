@@ -22,7 +22,7 @@ transparency = 0.3
 
 #Requests file to edit.
 file = input(str("Enter file name: "))
-file = file + ".txt"
+#file = file + ".txt"
 #Sets up window size and name.
 setup(width=size*1.2, height=(size/(columns/rows))*1.4+(abs(roll)*10))
 title("Cody's Fishy Grid")
