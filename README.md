@@ -4,6 +4,7 @@ Especially useful for low contrast environments.
 
 
 ## FishyGrid.py
+by Cody Garcia
 The Python script FishyGrid.py allows a user to quantify a critter's (or any moving subject's / creature's / animal's) path of movement. Using a transparent grid which can be overlayed with a video, a user can continuously click on the position of the critter. The grid is completely customizable using the variables below.
 
 ### The customizable variables of FishyGrid.py are:
@@ -32,6 +33,7 @@ There are no expected error messages to be seen when using the program.
 
 
 ## curiousfish.py
+by Carolin Sommer-Trembo
 The Python script curiousfish.py calculates various variables in the context of an individual exploring a novel environment. Input data are a two-column table which contains the 2D swimming path given by consecutive integer coordinates X and Y of the surface of the test tank.
 
 Version 2.0 (15.11.2021)
